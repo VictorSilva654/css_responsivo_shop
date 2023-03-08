@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    padding: 16px 0 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+header li {
+    list-style: none;
+    display: inline;
+    margin-left: 4px;
+}
+
+header li a {
+    text-decoration: none;
+}
+
+section h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: underline;
+    padding-bottom: 8px;
+}
+
+#about .container {
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#about .container p {
+    font-size: 2em;
+}
+
+#about .container img {
+    width: 50%;
+    margin-right: 16px;
+}
+
+#products .container {
+    margin-top: 32px;
+}
+
+#products .container li {
+    list-style: none;
+}
+
+#products .container li img {
+    width: 100%;
+}
+
+#products .container button {
+    margin-top: 8px;
+    padding: 16px;
+    background-color: #302f2f49;
+    width: 90%;
+    font-weight: bolder;
+    border-radius: 10%;
+    border: none;
+}
+
+#products .container ul {
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    column-gap: 1%;
+}
+
+@media screen and (max-width:767px) {
+    .container {
+        max-width: 90%;
+    }
+    
+    #about .container {
+        display: block;
+    }
+
+    #about .container img {
+        width: 100%;
+    }
+
+    #products .container ul{
+        display: block;
+    }
+    
+    #products .container li {
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    .container {
+        max-width: 90%;
+    }
+    
+    #about .container {
+        display: block;
+    }
+
+    #about .container img {
+        width: 100%;
+    }
+    
+    #products .container ul {
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        column-gap: 2%;
+    }
+    
+    #products .container li {
+        margin-bottom: 16px;
+    }
+    
+}
+
